@@ -28,10 +28,26 @@ Deploy the model into a web application where users can upload an image and get 
 
 # Requirements
 Make sure the following are installed:
-Python 3.7+
-TensorFlow/Keras or PyTorch
-OpenCV
-Flask (for web deployment)
-NumPy, Pandas, Scikit-learn
-For a full list, see requirements.txt.
+-> Python 3.7+
+-> TensorFlow/Keras or PyTorch
+-> OpenCV
+-> Flask (for web deployment)
+-> NumPy, Pandas, Scikit-learn
+-> For a full list, see requirements.txt.
 
+# Train the CNN Model
+python src/train.py
+
+# Evaluate Model Performance
+python src/evaluate.py
+
+# Grad-CAM Visualization
+Grad-CAM highlights the important regions in an image that the CNN used to make a prediction.
+To generate a Grad-CAM visualization:
+python src/gradcam.py --image_path path_to_image.jpg --model_path models/best_model.h5
+
+# Training
+-> Data Augmentation : Performed using ImageDataGenerator.
+-> Loss Function : Categorical cross-entropy.
+-> Optimizer : Adam (learning_rate=0.001).
+-> Callbacks : Model checkpointing, early stopping, and TensorBoard support.
