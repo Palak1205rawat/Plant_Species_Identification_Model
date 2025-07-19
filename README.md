@@ -26,31 +26,7 @@ Deploy the model into a web application where users can upload an image and get 
 📈 Data Augmentation : Enhance training data with rotations, zooms, and flips.
 📊 Evaluation Metrics : Accuracy, precision, recall, F1-score, confusion matrix.
 🌐 Web App : Flask-based web application for real-time plant species identification.
-# Directory Structure
-plant-identification/
-│
-├── data/                   # Contains training and test datasets
-│   ├── train/                # Training images organized by species
-│   └── test/                 # Test images organized by species
-│
-├── models/                 # Trained model files (.h5, .pb, etc.)
-│
-├── notebooks/              # Jupyter notebooks for data exploration and model development
-│
-├── src/                    # Python scripts for training and prediction
-│   ├── data_preprocessing.py
-│   ├── model_builder.py
-│   ├── train.py
-│   └── predict.py
-│
-├── app/                    # Flask web application
-│   ├── static/
-│   ├── templates/
-│   └── app.py
-│
-├── README.md
-├── requirements.txt
-└── config.py               # Configuration settings
+
 # Requirements
 Make sure the following are installed:
 Python 3.7+
